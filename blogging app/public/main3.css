@@ -1,0 +1,13 @@
+body{
+    background:url('images/background5.jpg');
+    background-size:cover;
+}
+#sidebar{
+    background:transparent;
+    padding-top:5%;
+    position: relative;
+    height:650px;
+}
+.card{
+    opacity: 0.8;
+}

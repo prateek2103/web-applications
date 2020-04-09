@@ -1,0 +1,90 @@
+
+#text,#person{
+    font-size:1em;
+    height:50px;
+}
+
+#output-window{
+    position:relative;
+    margin-top:-10px;
+    padding:10px;
+    height:400px;
+    width: 100%;
+}
+@media only screen and (max-width:1366px){
+#output-window{
+    height: 400px;
+    width: 100%;
+    overflow: scroll;
+    border:2px solid black;
+}
+input#text{
+    width:90%;
+    border-radius:0.2em;
+    padding:20px;
+    border-right:2px solid black;
+    border-left:2px solid black;
+    margin-top:-2px;
+    font-size:1em;
+}
+button#send{
+    padding:13px;
+    font-size:1em;
+    float:right;
+    width:10%;
+}
+}
+@media only screen and (max-width:800px){
+    #output-window{
+        height: 400px;
+        width: 100%;
+        overflow: scroll;
+        border:2px solid cornflowerblue;
+    }
+    #text,#person{
+        font-size:1em;
+        height:50px;
+    }
+    input#text{
+        width:90%;
+        border-radius:0.2em;
+        padding:20px;
+        border-right:2px solid black;
+        border-left:2px solid black;
+        margin-top:-2px;
+        font-size:1em;
+    }
+    button#send{
+        padding:13px;
+        font-size:1em;
+        float:right;
+        width:10%;
+    }
+    }
+@media only screen and (max-width:500px){
+    #output-window{
+        height: 300px;
+        width: 100%;
+        overflow: scroll;
+        border:2px solid cornflowerblue;
+    }
+    #text,#person{
+        font-size:1em;
+        height:50px;
+    }
+    input#text{
+        width:80%;
+        border-radius:0.2em;
+        padding:20px;
+        border-right:2px solid black;
+        border-left:2px solid black;
+        margin-top:-2px;
+        font-size:1em;
+    }
+    button#send{
+        padding:15px;
+        font-size:0.75em;
+        float:right;
+        width:20%;
+    }
+    }

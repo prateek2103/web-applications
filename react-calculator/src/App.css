@@ -1,0 +1,12 @@
+body{
+  font-size:30px;
+  text-align:center;
+}
+div.row > div{
+  border:1px solid black;
+  opacity:0.7;
+  margin-bottom:-10px;
+}
+div.container{
+  margin-top: 5%;
+}

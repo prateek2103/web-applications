@@ -1,0 +1,23 @@
+.content-box{
+    width:40%;
+    margin-left:30%;
+    margin-right:30%;
+    margin-top:2%;
+    padding:10px;
+    text-align:center;
+}
+
+#num{
+    width:90%;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.result-box{
+    width:60%;
+    min-height:60px;
+    margin-right:20%;
+    margin-left:20%;
+    margin-top:2%;
+    /*display:none;*/
+}

@@ -1,0 +1,15 @@
+body{
+    box-sizing: border-box;
+    background:url('images/background2.jpg');
+}
+
+form{
+    margin-top:10%;
+    padding:30px;
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    background-color:white;
+    opacity: 0.9;
+    border-radius:10px;
+}

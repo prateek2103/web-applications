@@ -1,0 +1,29 @@
+h1.header{
+    color:white;
+    background-color:steelblue;
+    opacity: 0.9; 
+    text-align: center;
+    padding:10px;
+    box-sizing:border-box;
+}
+.container-fluid{
+    margin-top:-4px;
+    background-color:teal;
+    min-height: 650px;
+}
+label{
+    text-emphasis: emphasis;
+}
+.addcontact{
+    width:80%;
+    margin:auto;
+    padding:10px;
+
+}
+.contact{
+    text-align:center;
+}
+ul li{
+    text-decoration:none;
+    list-style-type:none;
+}

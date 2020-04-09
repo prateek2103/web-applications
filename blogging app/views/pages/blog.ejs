@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/main3.css">
+</head>
+
+<body>
+    <div class='container-fluid'>
+        <!--nav-->
+        <div class="row">
+            <div class="col-md-2" id="sidebar">
+                <center> <a class="btn btn-light" style="width:70%;font-size:20px;" href="/me/create">Create</a>
+                    <a class='btn btn-dark' style="bottom:0px;left:0px;position:absolute;width:100%"
+                        href="/logout">Logout</a>
+                </center>
+            </div>
+            
+             <div class="col-md-10" style="overflow-y: scroll;height:650px;">
+                <h1 style="color:white;float:right;">Welcome <%= data.firstname %></h1>
+                <% data.posts.forEach(function(post){ %>
+                <div class="card" style="width:100%;">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= post.title %></h5>
+                        <p class="card-text"><%= post.description.slice(0,20) %>...</p>
+                        <a href="me/<%= post._id %>" class="card-link">open</a>
+                    </div>
+                </div>
+                <%}) %>
+                <%if(data.posts.length===0){%>
+                    <center><h3 style='color:white;margin-top:15%;'>No posts yet! Create a new one.</h3></center>
+                <%}%>
+            </div>
+        </div> 
+
+
+
+        <script src="/static/jquery.min.js"></script>
+        <script src="/static/bootstrap/bootstrap.js"></script>
+</body>
+
+</html>

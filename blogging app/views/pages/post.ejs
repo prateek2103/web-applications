@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/bootstrap.css">
+
+</head>
+
+<body style="background: url('/static/images/background5.jpg');background-size:cover;background-repeat:no-repeat">
+    <div class='container'>
+        <div style="margin-top:10%;width:80%;padding:30px;margin-right:10%;margin-left:10%;background: white;opacity: 0.9;">
+        <h3><b>Title: </b> 
+            <%= post.title %></h3>
+            <br><br>
+        <h3><b>Description: </b> 
+            <%= post.description %></h3><br>
+            <a href="/me" style="bottom:0;" class="btn btn-primary">Back</a>
+            <a href="/me/delete/<%= post._id %>" style="bottom:0;float:right;" class="btn btn-primary">Delete</a>
+       </div>
+       
+</div>
+
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap/bootstrap.js"></script>
+</body>
+
+</html>

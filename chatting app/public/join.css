@@ -1,0 +1,11 @@
+#feedback{
+    text-align: center;
+    color:red;
+    text-decoration: bold;
+    content:"";
+}
+@media only screen and (max-width:500px){
+    #contain{
+        height:400xp;
+    }
+}
