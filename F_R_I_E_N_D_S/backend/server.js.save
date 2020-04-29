@@ -1,0 +1,32 @@
+const express=require('express');
+const bodyParser=require('body-parser');
+const cors=require('cors');
+const app=express();
+const exec=require('exec');
+
+//middleware
+app.use(bodyParser.json());
+app.use(cors());
+
+app.get('/',function(req,res){
+	res.json('hello');
+})
+
+
+app.get('/search',function(req,res){
+	exec('ls',function(err,stdout,stderr){
+		if(err){
+			res.json("err:"+err);
+			}
+		else if (stderr){
+			res.json(stderr)
+		}
+		else{
+		
+	res.json(stdout)
+		}
+})
+
+app.listen(3000,function(){
+console.log('connected');
+})

@@ -1,0 +1,54 @@
+.heading{
+    text-align:center;
+    font-family: 'verdana';
+    background-image:linear-gradient(to right,#20639B,#3CAEA3);
+    position: relative;
+    padding:60px;
+    border-radius:0 0 50% 50%
+}
+
+.heading .content{
+    position: relative;
+}
+
+.heading .content h1{
+    font-weight: bold;
+    font-size:40px;
+    color:white;
+}
+.heading .content p{
+    font-size:20px;
+}
+
+.searchbox{
+    padding:10px;
+    margin-top:40px;
+    width:100%;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:40px;
+}
+
+.searchbox input{
+    padding:10px;
+    width:80%;
+    margin-left:5%;
+}
+.searchbox button{
+    padding:10px;
+    background-image: linear-gradient(to right,#F6D55C,#ED553B);
+    color:white;
+    border-radius: 10%;
+    width:10%;
+    margin-left:1%;
+    transition:0.25s linear;
+    font-weight: bold
+}
+.results{
+    padding:10px;
+    width:80%;
+    margin:auto;
+    border:1px solid black;
+    text-align:center;
+    margin-bottom:10px;
+}
