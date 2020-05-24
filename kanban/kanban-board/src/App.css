@@ -1,0 +1,25 @@
+
+#todo,#doing,#done{
+  padding:10px;
+  border:1px solid black;
+}
+
+#todo{
+  background:#a4f255
+}
+
+#doing{
+  background:#5bebf5
+}
+
+#done{
+  background:#f55b87
+}
+
+.header{
+  margin-bottom:10px; 
+}
+.card{
+  margin-bottom:10px;
+  margin-top:10px;
+}
